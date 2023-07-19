@@ -7,16 +7,6 @@
   }
 
   
-  .search a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .search a.active {
-    background-color: black;
-    color: white;
-  }
-  
   .search input[type=text] {
     padding: 6px;
     border: none;
