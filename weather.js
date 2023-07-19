@@ -19,7 +19,17 @@ async function checkWeather(){
     document.querySelector(".temp").innerHTML = data.main.temp + " °C";
     document.querySelector(".humidity").innerHTML = "H: " + data.main.humidity + " %";
     document.querySelector(".wind").innerHTML =  "WS: " + data.wind.speed + " KM/H";
-    const niz = data.weather;
-    console.log(niz);
+    if(data.clouds.all > 39 && data.clouds.all < 70){
+        document.getElementById("slika").src= "semi.png";
+    }
+    if(data.clouds.all > 70){
+        document.getElementById("slika").src= "cloudy.png";
+    }
+    if(data.weather === "Rainy"){
+        document.getElementById("slika").src= "rainy.png";
+
+    }
+
+    console.log(data);
 }
 checkWeather();
