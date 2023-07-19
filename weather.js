@@ -18,6 +18,7 @@ async function checkWeather(){
     document.querySelector("#demo").innerHTML = city;
     document.querySelector(".temp").innerHTML = data.main.temp + " °C";
     document.querySelector(".humidity").innerHTML = "H: " + data.main.humidity + " %";
+    document.querySelector(".pressure").innerHTML = "P: " + data.main.pressure + " Ph";
     document.querySelector(".wind").innerHTML =  "WS: " + data.wind.speed + " KM/H";
     if(data.clouds.all > 39 && data.clouds.all < 70){
         document.getElementById("slika").src= "semi.png";
