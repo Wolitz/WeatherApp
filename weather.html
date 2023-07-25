@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather.css">
+
+</head>
+<body>
+    <center>
+    <h1 id="font">Weather</h1>
+    <div class="search">
+        <input type="text" id="myText" placeholder="Search..">
+        <input type="submit" onclick="myFunction()" class="button" value="Submit">
+    </div>
+    <h2 id="demo">Beograd</h2>
+    <table>
+        <tr>
+           <th> <img src="sunny.png" id="slika" alt="img "></th>
+            <th><h2 class="temp"></h2></th>
+        </tr>
+    </table>
+            <h2 class="humidity"></h2>
+            <h2 class="pressure"></h2>
+            <h2 class="wind"> </h2>
+ 
+    </center>
+    <script src="weather.js" ></script>
+</body>
+</html>
