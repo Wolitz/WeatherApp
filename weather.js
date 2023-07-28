@@ -1,8 +1,7 @@
 var city= "Beograd"
 
-function myFunction() {
-     city = document.getElementById("myText").value;
-    console.log(city);
+function loadData() {
+    city = document.getElementById("myText").value;
 
     checkWeather();
   }
@@ -26,11 +25,9 @@ async function checkWeather(){
     if(data.clouds.all > 70){
         document.getElementById("slika").src= "cloudy.png";
     }
-    if(data.weather === "Rainy"){
+    if(data.weather[0].main === "Rainy"){
         document.getElementById("slika").src= "rainy.png";
 
     }
-
-    console.log(data);
 }
 checkWeather();
