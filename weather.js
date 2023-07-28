@@ -14,7 +14,7 @@ async function checkWeather(){
     const response = await fetch(apiUrl + city +'&appid=' + apiKey);
     var data = await response.json();
     
-    document.querySelector("#demo").innerHTML = city;
+    document.querySelector(".location").innerHTML = city;
     document.querySelector(".temp").innerHTML = data.main.temp + " °C";
     document.querySelector(".humidity").innerHTML = "H: " + data.main.humidity + " %";
     document.querySelector(".pressure").innerHTML = "P: " + data.main.pressure + " Ph";
