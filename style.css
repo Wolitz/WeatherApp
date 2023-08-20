@@ -1,6 +1,7 @@
 
 body{
   background-image: linear-gradient(blue, dodgerblue, lightblue);
+  min-height: 100vh; overflow: hidden;
 }
 
 table{
